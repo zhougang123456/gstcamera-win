@@ -106,12 +106,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)thirdparty;$(SolutionDir)thirdparty\gstreamer-$(Platform)\include;$(SolutionDir)thirdparty\gstreamer-$(Platform)\include\glib-2.0;$(SolutionDir)thirdparty\gstreamer-$(Platform)\lib\glib-2.0\include;$(SolutionDir)thirdparty\gstreamer-$(Platform)\include\gstreamer-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)gstreamer;$(SolutionDir)gstreamer\gstreamer-$(Platform)\include;$(SolutionDir)gstreamer\gstreamer-$(Platform)\include\glib-2.0;$(SolutionDir)gstreamer\gstreamer-$(Platform)\lib\glib-2.0\include;$(SolutionDir)gstreamer\gstreamer-$(Platform)\include\gstreamer-1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)thirdparty\gstreamer-$(Platform)\lib\gstreamer-1.0;$(SolutionDir)thirdparty\gstreamer-$(Platform)\lib;$(SolutionDir)$(Platform)-lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)gstreamer\gstreamer-$(Platform)\lib\gstreamer-1.0;$(SolutionDir)gstreamer\gstreamer-$(Platform)\lib;$(SolutionDir)$(Platform)-lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glib-2.0.lib;gio-2.0.lib;gobject-2.0.lib;gstapp-1.0.lib;gstreamer-1.0.lib;gstaudio-1.0.lib;gstvideo-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
